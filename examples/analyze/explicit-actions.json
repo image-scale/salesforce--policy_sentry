@@ -1,0 +1,34 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ecr:getauthorizationtoken",
+                "ecr:batchchecklayeravailability",
+                "ecr:getdownloadurlforlayer",
+                "ecr:getrepositorypolicy",
+                "ecr:describerepositories",
+                "ecr:listimages",
+                "ecr:describeimages",
+                "ecr:batchgetimage",
+                "ecr:initiatelayerupload",
+                "ecr:uploadlayerpart",
+                "ecr:completelayerupload",
+                "ecr:putimage"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "AllowManageOwnAccessKeys",
+            "Effect": "Allow",
+            "Action": [
+                "iam:CreateAccessKey",
+                "iam:DeleteAccessKey",
+                "iam:ListAccessKeys",
+                "iam:UpdateAccessKey"
+            ],
+            "Resource": "arn:aws:iam::*:user/${aws:username}"
+        }
+    ]
+}

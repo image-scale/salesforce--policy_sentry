@@ -1,0 +1,11 @@
+mode: crud
+name: test-rds-mult
+read:
+  - arn:aws:rds:us-east-1:123456789012:db:mydatabase
+write:
+  - arn:aws:rds:us-east-1:123456789012:db:mydatabase
+list:
+  - arn:aws:rds:us-east-1:123456789012:db:mydatabase
+wildcard-only:
+  single-actions:
+    - iam:PassRole

@@ -1,0 +1,4 @@
+mode: crud
+name: test-rds-read
+read:
+  - arn:aws:rds:us-east-1:123456789012:db:mydatabase

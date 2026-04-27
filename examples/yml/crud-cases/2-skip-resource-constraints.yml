@@ -1,0 +1,5 @@
+mode: crud
+name: test-skip-resource-constraints
+skip-resource-constraints:
+  - ssm:GetParameter
+  - ssm:GetParameters

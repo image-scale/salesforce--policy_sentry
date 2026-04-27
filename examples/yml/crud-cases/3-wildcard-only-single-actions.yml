@@ -1,0 +1,6 @@
+mode: crud
+name: test-wildcard-only-single
+wildcard-only:
+  single-actions:
+    - secretsmanager:GetRandomPassword
+    - secretsmanager:ListSecrets

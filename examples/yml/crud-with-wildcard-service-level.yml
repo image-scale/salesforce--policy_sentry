@@ -1,0 +1,10 @@
+mode: crud
+name: test-wildcard-service-level
+permissions-management:
+  - arn:aws:s3:::example-org-s3-access-logs
+wildcard-only:
+  single-actions:
+    - ram:EnableSharingWithAwsOrganization
+  service-read:
+    - s3
+    - ecr

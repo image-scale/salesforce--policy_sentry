@@ -1,0 +1,5 @@
+mode: crud
+name: test-wildcard-only-bulk
+wildcard-only:
+  service-read:
+    - ecr

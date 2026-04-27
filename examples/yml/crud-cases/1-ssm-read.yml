@@ -1,0 +1,4 @@
+mode: crud
+name: test-ssm-read
+read:
+  - arn:aws:ssm:us-east-1:123456789012:parameter/test

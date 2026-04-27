@@ -1,0 +1,6 @@
+mode: crud
+name: test-exclude-actions-empty-sid
+write:
+  - arn:aws:s3:::test
+exclude-actions:
+  - iam:Pass*
