@@ -1,7 +1,7 @@
 mode: crud
-name: 'GH-155'
+name: test-eks-service-wide
 wildcard-only:
-    service-write:
-    - 'eks'
-    service-list:
-    - 'eks'
+  service-write:
+    - eks
+  service-list:
+    - eks
