@@ -8,3 +8,10 @@
 **Commit**: Add IAM data loading and service querying functionality
 **Acceptance**: 7/7 criteria met
 **Verification**: tests FAIL on previous state, PASS on current state
+
+## Round 2
+**Task**: Task 2 — Implement ARN parsing and matching
+**Files created**: iam_policy_generator/arn_utils.py, tests/test_arn_utils.py
+**Commit**: Add ARN parsing and matching functionality
+**Acceptance**: 7/7 criteria met
+**Verification**: tests FAIL on previous state, PASS on current state
