@@ -15,3 +15,10 @@
 **Commit**: Add ARN parsing and matching functionality
 **Acceptance**: 7/7 criteria met
 **Verification**: tests FAIL on previous state, PASS on current state
+
+## Round 3
+**Task**: Task 3 — Implement action querying
+**Files created**: iam_policy_generator/action_query.py, tests/test_action_query.py
+**Commit**: Add action querying functionality for IAM actions
+**Acceptance**: 7/7 criteria met
+**Verification**: tests FAIL on previous state, PASS on current state
