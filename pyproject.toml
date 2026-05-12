@@ -1,0 +1,25 @@
+[project]
+name = "iam-policy-generator"
+version = "1.0.0"
+description = "Generate locked-down AWS IAM Policies"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "orjson>=3.11.0,<4.0.0",
+    "PyYAML>=6.0.0,<7.0.0",
+    "click>=8.1.0,<9.0.0",
+    "schema>=0.7.0,<0.8.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9.0.0,<10.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
